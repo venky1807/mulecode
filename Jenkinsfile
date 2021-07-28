@@ -14,4 +14,15 @@ pipeline {
 			}
 		}
 	}
+	post {
+    failure {
+        mail to: 'venkateshwar.guda@apisero.com',
+             subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+             body: "Something is wrong with ${env.BUILD_URL}"
+    }
+     success {
+        mail to: 'venkateshwar.guda@apisero.com',
+             subject: "Successful Pipeline: ${currentBuild.fullDisplayName}",
+             body: "Something is wrong with ${env.BUILD_URL}"
+    }
 }
