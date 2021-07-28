@@ -23,7 +23,7 @@ pipeline {
      success {
         mail to: 'venkateshwar.guda@apisero.com',
              subject: "Successful Pipeline: ${currentBuild.fullDisplayName}",
-             body: "Something is wrong with ${env.BUILD_URL}"
+             body: "Successfully deployed ${env.BUILD_URL}"
     }
     }
 }
