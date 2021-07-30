@@ -7,6 +7,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="jenkins-pocFlow" doc:id="c1442740-86ad-4cde-a2a9-52fadbc99c3d" >
 		<http:listener doc:name="Listener" doc:id="a8f25194-6b8c-4265-ae44-1b8a3c126b9b" config-ref="HTTP_Listener_config" path="/test"/>
 		<set-payload value="Successful" doc:name="Set Payload" doc:id="c948673f-b3ec-4131-9cbb-63b53169546c" />
-		<logger level="INFO" doc:name="Logger" doc:id="8adeca05-8f84-4f1e-937e-04fb433ffd11" message="Successful "/>
+		<logger level="INFO" doc:name="Logger" doc:id="8adeca05-8f84-4f1e-937e-04fb433ffd11" message="Success full"/>
 	</flow>
 </mule>
